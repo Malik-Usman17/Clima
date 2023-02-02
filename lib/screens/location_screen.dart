@@ -7,7 +7,6 @@ class LocationScreen extends StatefulWidget {
   const LocationScreen({Key? key, this.locationWeather}) : super(key: key);
 
   final locationWeather;
-  // LocationScreen({})
 
   @override
   State<LocationScreen> createState() => _LocationScreenState();
@@ -82,7 +81,6 @@ class _LocationScreenState extends State<LocationScreen> {
                         MaterialPageRoute(builder: (context) {
                           return const CityScreen();
                         },),);
-                      print(typedName);
                       if(typedName != null) {
                         var weatherData = await weather.getCityWeatherData(typedName);
                         updateUI(weatherData);
