@@ -56,7 +56,7 @@ class _LocationScreenState extends State<LocationScreen> {
             //colorFilter: ColorFilter.mode(Colors.white.withOpacity(0.8), BlendMode.dstATop)
           )
         ),
-        constraints: BoxConstraints.expand(),
+        constraints: const BoxConstraints.expand(),
         child: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -91,7 +91,7 @@ class _LocationScreenState extends State<LocationScreen> {
                 ],
               ),
               Padding(
-                padding: EdgeInsets.only(left: 15.0),
+                padding: const EdgeInsets.only(left: 15.0),
                 child: Row(
                   children: [
                     Text('$temperature°', style: kTempTextStyle,),
@@ -100,10 +100,9 @@ class _LocationScreenState extends State<LocationScreen> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(right: 15.0),
+                padding: const EdgeInsets.only(right: 15.0),
                 child: Text(
                   '$weatherMsg in $cityName',
-                  // "It's 🍦 time in San Francisco!",
                   textAlign: TextAlign.right,
                   style: kMessageTextStyle,
                 ),
